@@ -1,0 +1,31 @@
+body{background-image: url("../img/bg_bod.jpg");background-repeat: repeat;color: #FFF;font-family: Helvetica, Arial;}
+header{background:url("../img/bg_header.jpg") repeat scroll 0 0 transparent; height:300px;}
+header h1{font-family: 'Righteous', cursive; font-size:75pt; text-shadow: 5px 5px 15px #000; width:1024px; margin:0 auto;}
+header h1 > span{font-size:30pt;}
+header nav{background: url("../img/bg_nav.jpg") repeat scroll 0 0 transparent; height:50px; top:110px; position:relative;}
+header nav ul{width:1024px; margin:0 auto;}
+header li{display:inline; padding-right: 10px;}
+header a{color: rgb(255,255,255);
+    display: block;
+    float: left;
+    margin-right: 18px;
+    margin-top: 15px;
+    text-decoration: none;
+	font-family: 'Amaranth', sans-serif; font-weight:normal;
+	text-shadow: 1px 1px 2px #000;
+	}
+header a:hover{color: #330A00;}
+div#fotos_platillo{float:left; position:relative; width: 290px;}
+div#texto_platillo{float:left: width:700px; font-size:9pt;}
+section#temporada,section#sucursales{ width:1024px; margin:0 auto;}
+section#sucursales{min-height: 550px; clear:both;}
+section h1{text-shadow: 2px 2px 8px #000;font-family: 'Amaranth', sans-serif; font-weight:normal; padding: 5px 0;}
+section.sucursal {width:320px; float:left; margin-right:10px; }
+section.sucursal  iframe{background:#9E6D43; padding:7px; border-radius:10px; box-shadow: 5px 5px 4px #000000;}
+section.sucursal  iframe:hover{background:#9E6D24; cursor: pointer;}
+section a{color:#FFF; text-decoration:none;}
+section a:hover{text-decoration:underline;}
+footer{font-size:10pt; height: 150px; background:url("../img/bg_footer.jpg") repeat scroll 0 0 transparent; padding-top:30px; color: #222;}
+footer p{margin:0 auto; width:1024px; text-align:right; padding-right: 10px;}
+.pics img{border:1px solid #9E6D24; background-color:#9E6D43; padding:10px; border-radius:10px;}
+.pics{height:250px;}

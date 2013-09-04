@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Comida poblana para disfrutar en familia">
+	<meta name="author" content="Alex Arriaga">
+	<meta name="keywords" content="Comida, Puebla, disfruta, turismo">
+	<title>Angelitos Restaurante</title>
+	<link rel="stylesheet" href="css/reset.css"> 
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.cycle.all.js"></script>
+	<script type="text/javascript">
+	var j = jQuery.noConflict();
+	(function ($){
+		j(document).ready(function(){
+			$('#fotos_platillo').cycle({ 
+				fx:     'zoom', 
+				easing: 'easeInBounce', 
+				delay:  -4000 
+			});
+		});//document
+	})(jQuery);
+	</script>
+</head>
+<body>
+	<header>
+		<h1>Angelistos <span>Restaurante<span></h1>
+		<nav>
+			<ul>
+				<li><a href="#">Menú</a></li>
+				<li><a href="#">Encuéntranos</a></li>
+				<li><a href="#">Servicio a domicilio</a></li>
+				<li><a href="#">Reservaciones</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="temporada">
+		<h1>Platillo de temporada</h1>
+		<div id="fotos_platillo" class="pics">
+            <img width="250" height="188" src="img/foto_platillo.jpg" style="position: absolute; top: 100px; left: 100px; display: none; z-index: 4; opacity: 1; width: 250px; height: 188px;">
+            <img width="250" height="188" src="img/foto_platillo.jpg" style="position:absolute; top: 0px; left: 0px; display: block; z-index: 3; width: 250px; height: 188px; opacity: 1;">
+            <img width="250" height="188" src="img/foto_platillo.jpg" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 1; width: 250px; height: 188px;">
+        </div>
+		<div id="texto_platillo">
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+		</div>
+	</section>
+	<section id="sucursales">
+		<h1>Sucursales</h1>
+		<section class="sucursal">
+			<iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.mx/maps?q=19.044229,-98.198687&amp;num=1&amp;ie=UTF8&amp;t=m&amp;ll=19.042404,-98.198032&amp;spn=0.02434,0.025663&amp;z=14&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com.mx/maps?q=19.044229,-98.198687&amp;num=1&amp;ie=UTF8&amp;t=m&amp;ll=19.042404,-98.198032&amp;spn=0.02434,0.025663&amp;z=14&amp;source=embed" style="text-align:left">Ver mapa más grande</a></small>
+		</section>
+		<section class="sucursal">
+			<iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.mx/maps?q=19.044229,-98.198687&amp;num=1&amp;ie=UTF8&amp;t=m&amp;ll=19.042404,-98.198032&amp;spn=0.02434,0.025663&amp;z=14&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com.mx/maps?q=19.044229,-98.198687&amp;num=1&amp;ie=UTF8&amp;t=m&amp;ll=19.042404,-98.198032&amp;spn=0.02434,0.025663&amp;z=14&amp;source=embed" style="text-align:left">Ver mapa más grande</a></small>
+		</section>
+		<section class="sucursal">
+			<iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.mx/maps?q=19.044229,-98.198687&amp;num=1&amp;ie=UTF8&amp;t=m&amp;ll=19.042404,-98.198032&amp;spn=0.02434,0.025663&amp;z=14&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com.mx/maps?q=19.044229,-98.198687&amp;num=1&amp;ie=UTF8&amp;t=m&amp;ll=19.042404,-98.198032&amp;spn=0.02434,0.025663&amp;z=14&amp;source=embed" style="text-align:left">Ver mapa más grande</a></small>
+		</section>
+	</section>
+	<footer>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porttitor pellentesque bibendum. Aenean non erat non tortor tempus tincidunt ac ac mi.
+		</p>
+		<p>Consectetur adipiscing elit. Integer porttitor pellentesque bibendum. Aenean non erat non tortor tempus tincidunt ac ac mi.
+		</p>
+	</footer>
+</body>
+</html>
