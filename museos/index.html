@@ -1,0 +1,137 @@
+﻿<!doctype html>
+<html lang="es" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Museos de Puebla</title>
+		<meta name="description" content="">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Boogaloo' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/jquery.textshadow.css">
+		<script src="js/libs/modernizr-2.5.3.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<!-- Recomendado poner el cargado de jQuery y los scripts justo antes de terminar el body -->
+		<script>
+			window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')
+		</script>
+		<script src="js/jquery.textshadow.js"></script>
+		<script>
+		(function($){
+			$(document).ready(function(){
+				if(!Modernizr.textshadow){
+					$('h1').textshadow('1px 1px 2px #562813');
+				}
+			});
+		})(jQuery);
+		</script>
+	</head>
+	<body>
+		<!--[if lt IE 7]><p class=chromeframe>Su navegador es muy <em>antiguo!</em> <a href="http://browsehappy.com/">Actualice a uno diferente </a> o <a href="http://www.google.com/chromeframe/?redirect=true">instale Google Chrome Frame</a> para mejorar la experiencia con este sitio.</p><![endif]-->
+		<div class="wrapper_all">
+		<div class="codice">
+		<header>
+			<h1>Museos de Puebla</h1>
+		</header>
+		<section id="main" class="content">
+			<section id="left">
+			</section>
+			<section id="right">
+				<nav>
+					<a id="como_llegar" class="link" href="#"><h2>¿Cómo llegar?</h2></a>
+					<div id="div_como_llegar" class="link" ></div>
+					
+					<a id="muestrame" class="link" href="#"><h2>Muéstrame</h2></a>
+					<div id="div_muestrame" class="link"></div>
+					
+					<a id="costos" class="link" href="#"><h2>Costos</h2></a>
+					<div id="div_costos" class="link"></div>
+					
+					<a id="pregunta" class="link" href="#"><h2>Pregunta</h2></a>
+					<div id="div_pregunta" class="link"></div>
+					
+					<a id="reserva" class="link" href="#"><h2>Reserva</h2></a>
+					<div id="div_reserva" class="link"></div>
+					
+					<a id="informacion" class="link" href="#"><h2>Información</h2></a>
+					<div id="div_informacion" class="link"></div>
+				</nav>
+			</section>
+		</section>
+		<section id="geo" class="content">
+			<h1>¿Cómo llegar?</h1>
+			<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+			<article>
+			  <p>Su localización: <span id="status">buscando...</span></p>
+			</article>
+			<script>
+			
+			var infowindow;
+				function success(position) {
+				  var s = document.querySelector('#status');
+				  
+				  if (s.className == 'success') {
+					// not sure why we're hitting this twice in FF, I think it's to do with a cached result coming back    
+					return;
+				  }
+				  
+				  s.innerHTML = "encontrada!";
+				  s.className = 'success';
+				  
+				  var mapcanvas = document.createElement('div');
+				  mapcanvas.id = 'mapcanvasfnx';
+				  mapcanvas.style.height = '400px';
+				  mapcanvas.style.width = '990px';
+					
+				  document.querySelector('article').appendChild(mapcanvas);
+				  
+				  var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+				  var myOptions = {
+					zoom: 15,
+					center: latlng,
+					mapTypeControl: false,
+					navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				  };
+				  var map = new google.maps.Map(document.getElementById("mapcanvasfnx"), myOptions);
+				  
+				  var marker = new google.maps.Marker({
+					  position: latlng, 
+					  map: map, 
+					  title:"Tu estás aquí! (en un radio de al menos "+position.coords.accuracy+")"
+				  });
+				  
+				  infowindow = new google.maps.InfoWindow();
+				  infowindow.setContent("Tu estás aquí! (en un radio de al menos "+position.coords.accuracy+")");
+				  infowindow.open(map, marker);
+				  
+				  google.maps.event.addListener(marker, 'click', function() {
+					infowindow.open(map, marker);
+					});
+				}
+
+				function error(msg) {
+				  var s = document.querySelector('#status');
+				  s.innerHTML = typeof msg == 'string' ? msg : "failed";
+				  s.className = 'fail';  
+				  // console.log(arguments);
+				}
+				if(Modernizr.geolocation){
+					if (navigator.geolocation) {
+						navigator.geolocation.getCurrentPosition(success, error);
+					//	alert("Tenemos geolocalizacion");
+					} 
+				}else {
+				  error('Geolocalización no soportada');
+				 // alert("NO geo");
+				}
+		</script>
+		</section>
+		<footer>
+
+		</footer>
+		</div>
+		</div>
+		
+	</body>
+</html>

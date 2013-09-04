@@ -1,0 +1,95 @@
+body{background: #930413;}
+h1{margin: 0; padding:0;}
+div.codice{background: url(../img/bg_codice.png) repeat scroll 0 0 transparent;min-height: 900px;}
+div.wrapper_all{
+	background: -webkit-linear-gradient(top, #000, #930413); /* Chrome 11+ */
+	background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#930413));/* Safari, Chrome 10 */
+	background: -moz-linear-gradient(top, #000, #930413);
+	background: -o-linear-gradient(top, #000, #930413); /* Opera */
+	background: -ms-linear-gradient(top, #000, #930413); /* IE10 */
+	background: linear-gradient(top, #000, #930413); /* Propuesta W3C */
+	min-height: 900px;
+}
+
+.no-cssgradients div.wrapper_all{
+	background: url(../img/bg_body.png) repeat-x scroll 0 0 transparent;
+}
+
+section.content {
+   border-bottom: 2px solid #930413;
+   border-right: 2px solid #930413;
+}
+
+.boxshadow  section.content{
+	width: 990px;
+	margin: 0 auto;
+	box-shadow: 0px 10px 20px #930413;
+	background: #FDE7B6;
+	padding: 0 15px;
+	border:none;
+}
+
+header{padding:10px; width:1000px; margin:0 auto;  background: #FDE7B6;}
+section h1, header h1{
+	font-family: 'Boogaloo', cursive;
+	font-size:35pt;
+	text-shadow: 1px 1px 2px #562813;
+	color: #66020D;
+}
+
+
+section#main{min-height: 500px; overflow: hidden;}
+section#geo{
+	min-height: 600px;
+	clear:both;
+	border-radius: 0px 0px 10px 10px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	/*behavior: url(../js/PIE.htc);*/
+	margin-bottom: 20px;
+	}
+section#left{
+	background: url(../img/img_guerrero.png) no-repeat scroll 0 0 transparent;
+	height: 550px;
+	width: 410px;
+	float:left;
+}
+section#right{width: 560px; float: left;}
+
+/* Desde aqui haremos la práctica */
+nav{position: relative;}
+nav a.link{
+	position: absolute;
+	text-decoration: none;
+	color: #562813;
+}
+nav a.link:hover{color: #CC3908;}
+nav div.link{
+	background: url(../img/sprite_iconos.jpg) no-repeat scroll 0 0 transparent;
+	position:absolute;
+	width: 60px;
+	height: 50px;
+	cursor:pointer;
+}
+
+nav a#como_llegar{top:190px; left:60px;}
+nav a#muestrame{left: 150px; top:30px;}
+nav a#costos{left: 380px; top:30px;}
+nav a#pregunta{left:455px; top:190px;}
+nav a#reserva{left: 380px; top: 320px;}
+nav a#informacion{left: 150px; top:320px;}
+
+nav #div_como_llegar{left:0px; top:210px;}
+nav #div_muestrame{left: 75px; top: 50px; background-position: -65px 0; width: 75px;}
+nav #div_costos{left: 310px; top:50px; background-position: -144px 0;}
+nav #div_pregunta{left:390px; top:210px; background-position: -210px 0;}
+nav #div_reserva{left: 310px; top: 340px; background-position: -266px 0;}
+nav #div_informacion{left: 80px; top:340px; background-position: -323px 0;}
+
+nav #div_como_llegar:hover{background-position: 0px -50px;}
+nav #div_muestrame:hover{background-position: -65px -50px;}
+nav #div_costos:hover{background-position: -144px -50px;}
+nav #div_pregunta:hover{background-position: -210px -50px;}
+nav #div_reserva:hover{background-position: -266px -50px;}
+nav #div_informacion:hover{background-position: -323px -50px;}
+
