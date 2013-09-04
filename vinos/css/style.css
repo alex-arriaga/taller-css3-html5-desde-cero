@@ -1,0 +1,65 @@
+body{background: #FFF;}
+h1{margin: 0; padding:0;}
+div.wrapper_all{
+	min-height: 900px;
+	width:900px; margin:0 auto;
+}
+.no-cssgradients div.wrapper_all{
+	background: url(../img/bg_body.png) repeat-x scroll 0 0 transparent;
+}
+
+section.content {
+	
+}
+header{
+	border-bottom: 2px solid #66020D;
+    height: 270px;
+    padding: 10px;
+	margin-bottom: 20px;
+	}
+nav{float: right; clear:both;}
+header figure{
+	float:left;
+	width: 200px;
+}
+header article{
+	float:left;
+	width: 680px;
+}
+header p{
+	font-family: 'Amaranth', sans-serif;
+	font-weight: normal;
+	font-size:10pt;
+}
+nav ul{margin: 0;}
+nav li{display:inline; padding-right: 10px;}
+nav a{text-decoration:none; color: #66020D; font-family: 'Amaranth', sans-serif; text-shadow: 1px 1px 1px #333;}
+section h1, header h1{
+	font-family: 'Boogaloo', cursive;
+	font-size:35pt;
+	text-shadow: 1px 1px 2px #562813;
+	color: #66020D;
+}
+section#main{min-height: 500px; overflow: hidden;}
+section#main article{
+	float: left;
+	width: 30%;
+	margin-right: 1%;
+	padding:1%;
+	border:1px solid #CCC;
+	box-shadow: 2px 1px 4px #777;
+	border-radius: 10px;
+	text-align: center;
+}
+
+article h2{
+	font-family: 'Boogaloo', cursive;
+	font-size:25pt;
+	text-shadow: 1px 1px 2px #562813;
+	color: #66020D;
+	padding: 0 10px;
+	margin: 0;
+}
+
+
+

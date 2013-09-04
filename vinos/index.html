@@ -1,0 +1,84 @@
+﻿<!doctype html>
+<html lang="es" class="no-js" manifest="offline.manifest">
+	<head>
+		<meta charset="utf-8">
+		<title>Vinos</title>
+		<meta name="description" content="">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/jquery.pageslide.css">
+		<link href='http://fonts.googleapis.com/css?family=Boogaloo' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Amaranth:400,400italic' rel='stylesheet' type='text/css'>
+		<script src="js/libs/modernizr-2.5.3.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 7]><p class=chromeframe>Su navegador es muy <em>antiguo!</em> <a href="http://browsehappy.com/">Actualice a uno diferente </a> o <a href="http://www.google.com/chromeframe/?redirect=true">instale Google Chrome Frame</a> para mejorar la experiencia con este sitio.</p><![endif]-->
+		<div class="wrapper_all">
+		<header>
+			<nav>
+				<ul>
+					<li><a class="page" href="html/vinoteca.html">Vinoteca</a></li>
+					<li><a class="page" href="html/comprar.html">¿Dónde comprar?</a></li>
+					<li><a class="page" href="html/vinos.html">Vinos selectos</a></li>
+				</ul>
+			</nav>
+			<figure>
+				<img src="img/copa.png" alt="">
+			</figure>
+			<article>
+				<h1>Vinos para ti</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+					tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+					quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+					Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, 
+					vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim 
+					qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+				</p>
+			</article>
+		</header>
+		<section id="main" class="content">
+			<article>
+				<h2>Consectetuer adipiscing</h2>
+				<figure>
+					<img src="img/vino_1.png">
+					<figcaption>Facilisis at vero eros et accumsan et iusto odio dignissim 
+					qui blandit praesent luptatum zzril</figcaption>
+				</figure>
+			</article>
+			<article>
+				<h2>Consectetuer adipiscing</h2>
+				<figure>
+					<img src="img/vino_2.png">
+					<figcaption>Facilisis at vero eros et accumsan et iusto odio dignissim 
+					qui blandit praesent luptatum zzril</figcaption>
+				</figure>
+			</article>
+			<article>
+				<h2>Consectetuer adipiscing</h2>
+				<figure>
+					<img src="img/vino_3.png">
+					<figcaption>Facilisis at vero eros et accumsan et iusto odio dignissim 
+					qui blandit praesent luptatum zzril</figcaption>
+				</figure>
+			</article>
+		</section>
+		<footer>
+
+		</footer>
+		</div>
+		<!-- Lo recomendable es cargar jQuery justo antes de terminar el body -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script>
+			window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')
+		</script>
+		<script src="js/jquery.pageslide.min.js"></script>
+		<script type="text/javascript">
+		(function($){
+			$(document).ready(function(){
+				$(".page").pageslide();
+				});
+		})(jQuery);
+		</script>
+	</body>
+</html>
