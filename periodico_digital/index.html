@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="noticias, diario, planeta, mexico, aviso">
+	<title>Diario el Planeta</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link href='http://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+	var js = jQuery.noConflict();
+	(function($){
+		js(document).ready(function(){
+			js('#noticia-principal').load('html/article.html', function(){});
+			js('#video').load('html/video.html', function(){});
+			js('#noticias-rel').load('html/articles.html', function(){});
+			js('#podcast-rel').load('html/audio.html', function(){});
+		});
+	})(jQuery);
+	</script>
+</head>
+<body>
+	<header>
+		<h1>Diario el Planeta</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Nacional</a></li>
+				<li><a href="#">Internacional</a></li>
+				<li><a href="#">Política</a></li>
+				<li><a href="#">Ciencia</a></li>
+				<li><a href="#">Medio Ambiente</a></li>
+				<li><a href="#">Aviso Oportuno</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="wrapper_all">
+	<section class="content">
+		<section id="video">
+		</section>
+		<aside id="podcast-rel">
+		</aside>
+	</section>
+	<section class="content">
+		<section id="noticia-principal">
+		</section>
+		<aside id="noticias-rel">
+		</aside>
+	</section>
+	</div>
+	<footer>
+		
+	</footer>
+</body>
+</html>
